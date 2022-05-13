@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
       },
       include: [{
         model: Comment,
-        attributes: ['id', 'text', 'user_id', 'post_id']
+        attributes: ['id', 'comment_text', 'user_id', 'post_id']
       }]
     });
     if (existingPost) {
