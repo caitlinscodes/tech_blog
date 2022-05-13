@@ -1,0 +1,27 @@
+[
+  {
+    "user_id": 4,
+    "comment_text": "Totally agree, Ron, but can we request movie recs instead?",
+    "post_id": 1
+  },
+  {
+    "user_id": 1,
+    "comment_text": "Why would anyone ever eat anything other than breakfast food?",
+    "post_id": 3
+  },
+  {
+    "user_id": 1,
+    "comment_text": "April, keep up the good work.",
+    "post_id": 4
+  },
+  {
+    "user_id": 2,
+    "comment_text": "Agreed Ron! Want to meet a JJ's Diner for some waffles?",
+    "post_id": 3
+  },
+  {
+    "user_id": 2,
+    "comment_text": "Andy, I had the flu...your internet was just not working.",
+    "post_id": 5
+  }
+]
