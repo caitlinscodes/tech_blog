@@ -1,14 +1,25 @@
 <div class="text-center">
   <h2>{{post.title}}</h2>
-  
-  <p>Created by {{post.user.name}} on {{post.createdAt}}</p>
-  {{!-- Paused Here --}}
-  <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed
-  </p>
-  <p>
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
+    <p>Created by {{post.user.name}} on {{post.createdAt}}</p>
+  <div>
+    <p>
+      {{ post.post_text}}
+    </p>
+  </div>
+
+  {{#if session.logged_in}}
+  <form class = "form new-comment-form">
+    <div class="form-group">
+      <textarea class="'form-input" id="comment_text" name="comment_text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Comment</button>
+  </form>
+  {{else}}
+  <a href="/login">Log In to Comment</a>
+  {{/if}}
+</div>
+
+{{#each post.comments as |comment|}}
+<div id="commentResponse" comment-id={{comment.id}}>
+  {{!-- How to comment --}}
 </div>
