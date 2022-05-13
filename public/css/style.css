@@ -17,8 +17,10 @@ header, .project:not(:last-child) {
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+#commentSection {
+  border: 1px solid black;
+}
+
+#postSection {
+  border-bottom: 1px solid black;
 }
