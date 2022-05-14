@@ -47,7 +47,7 @@ router.get('/post/:id', async (req, res) => {
     post.comments = post.comments.reverse()
 
     res.render('post', {
-      ...post,
+      post,
       logged_in: req.session.logged_in
     });
   } catch (err) {
